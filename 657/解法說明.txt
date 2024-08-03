@@ -1,0 +1,7 @@
+主input儲存在array picture當中
+
+子圖儲存在array sub 當中
+
+先使用dfs找出有幾個骰子
+
+在使用dfs在骰子當中找出有幾個點數
