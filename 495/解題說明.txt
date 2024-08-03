@@ -1,0 +1,20 @@
+使用vector儲存fibonacci數列
+
+初始化設定fibonacci[0]=0,fibonacci[1]=1
+
+讀去輸入N
+
+若是輸入N大於目前的fibonacci的長度則計算從fibonacci vector的長度+1~N
+
+並將其儲存入fibonacci vector
+
+但後面的位元可能會over float
+
+所以使用
+#include <boost/multiprecision/cpp_int.hpp> 
+
+using namespace boost::multiprecision;
+
+vector<cpp_int> fibonacci;
+
+處理可能會over float的問題
