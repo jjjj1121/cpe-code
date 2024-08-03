@@ -1,0 +1,41 @@
+使用兩個vector儲存B stack和station stack
+
+並利用nowAnumber變數追蹤A stack目前最上面的數字
+
+一開始將輸入讀進並儲存在B stack裡
+
+1)接者使用while迴圈檢查B[0]也就是stack最下面那個數字有沒有等於現在的nowAnumber
+
+若等於代表A stack 最上面的數字可以直接pop出
+
+並push到B裡面
+
+但我們前面有已經儲存過B stack裡的數值了
+
+所以這裡不用push到B裡
+
+反而是要erase出B stack最底下的數字
+
+以便我們追蹤下一個B stack裡的數字
+
+同時檢查station stack最上面的數值有沒有等於B[0]
+
+若等於及pop出並erase B stack的數值
+
+以便追蹤下一個B Stack的數值
+
+2)若B[0]不等於現在的nowAnumber代表A的數值要push到 station stack裡
+
+以上兩點都檢查完之後
+
+接者檢查station stack最上面的數值有沒有等於B[0]
+
+若等於及pop出並erase B stack的數值
+
+以便追蹤下一個B Stack的數值
+
+最後 
+
+若temp為空代表此排序可行輸出yes
+
+反之不可行輸出no
