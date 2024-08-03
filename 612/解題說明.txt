@@ -1,0 +1,18 @@
+使用vector DNA儲存輸入的資料
+
+接者用ACGT對於每一行string去計算其排序的多寡
+
+分為三個狀況:
+
+1.若前面有比A還要大的字母則count+=ACGT[1]
+若前面有比A還要大的字母則count+=ACGT[2]
+若前面有比A還要大的字母則count+=ACGT[3]
+
+2.若前面有比B還要大的字母則count+=ACGT[2]
+若前面有比B還要大的字母則count+=ACGT[3]
+
+3若前面有比C還要大的字母則count+=ACGT[3]
+
+再將算完的count排序
+
+最後依照排序從DNA當中印出即可
