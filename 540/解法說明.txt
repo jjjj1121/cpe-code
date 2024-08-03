@@ -1,0 +1,39 @@
+使用三個陣列完成此題
+
+1. 使用二維陣列儲存題目給的team queue 我們命名為team
+
+2. 使用vector儲存目前的queue 我們命名為queue
+
+3. 使用vector 儲存目前的team的順序 我們將其命名為teamqueue
+
+另外使用array儲存目前各個team在queue最前面的位子 我們將其命名為pointer
+
+
+當資料輸入時，先檢查其指令，分為
+
+1.enqueue:
+
+先檢查要輸入的資料是否存在 team裡面
+
+若存在的話檢查目前此team在teamqueue裡面的順序
+
+並回傳要插入queue的位子的index
+
+且將此teamqueue 後面的team pointer都+1(代表位子往後移)
+
+若不存在則回傳queue目前的長度
+
+代表直接儲存在最後面
+
+
+2.dequeue:
+
+直接將queue最前面的資料輸出即可
+
+輸出玩再從queue刪除
+
+再將pointer全部都-1 
+
+因為dequeue一筆資料
+
+所以資料位子都往前移 
