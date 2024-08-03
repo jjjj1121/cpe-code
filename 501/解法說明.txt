@@ -1,0 +1,11 @@
+將input儲存在vector A 和u
+
+檢查現在的count_add有沒有超過u[i]
+
+若沒有就執行二分搜尋法
+
+並回傳應該insert的位子
+
+將A[count_add]insert到剛剛找到的位子
+
+若超過就將現在的i印出
