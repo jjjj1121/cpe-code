@@ -1,0 +1,27 @@
+首先建立質數表因數值不超過32767所以建立1~327676
+
+接者使用getline 接收輸入
+
+對於每行input 將字串轉為數字並前後分為P和C
+
+在加總每個pow(P,C) = target
+
+接者計算 target -1(題目要求)
+
+利用已建好值數表由最小的值數開始去%
+
+若target -1 % 目前質數==0
+
+則count++ (count用來追蹤目前此值數%了幾次)
+
+若target -1 % 目前質數!=0
+
+則代表目前Target-1 沒有目前這個質數的因數了
+
+則將目前質數和count push 到output vecotr裡面
+
+利用while回圈做以上事情直到target -1 == 1
+
+則代表質因數找完
+
+再將output vector 輸出即可
