@@ -1,0 +1,17 @@
+先建立兩個陣列分別叫做(HaabMonth、Tzolkin)，一個儲存 haab的月份，另一個儲存tzolkin的 NameOfTheDay 
+
+接者將input讀入，分別利用string儲存day和month、int 儲存year
+
+接者將string 儲存的day轉換成數字，
+
+在計算從0年1月0號到數入的那天總共的天數，
+
+接著就可以輸出答案了，
+
+分別為 :日期 NameOfTheDay 年分
+
+日期=總天數%260 %13+1
+
+NameOfTheDay =Tzolkin[(totalday%260)%20]
+
+年分=totalday/260
