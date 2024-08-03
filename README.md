@@ -1,1 +1,1 @@
-it is the code i writen for the uva questions
+it is the code i written for the uva questions
