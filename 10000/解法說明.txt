@@ -1,0 +1,11 @@
+使用array map儲存input
+
+使用array length儲存目前最長長度
+
+接者使用dfs對map裡的起始點開始遞迴dfs(i,k)
+
+如果(i,k)這點的路徑長度+1 大於  (k,j) 則dfs(k,j)
+
+否則不更新 
+
+最後找length裡面最大值即是答案
